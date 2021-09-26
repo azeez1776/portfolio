@@ -83,9 +83,7 @@ body {
 .footer {
   background-color: #fff;
   width: 100vw;
-  height: 8%;
-  position: absolute;
-  top: 116.3em;
+  /* height: 25%; */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -186,5 +184,4 @@ body {
     width: 0.5em;
     margin-right: 1em;
   }
-
 }
