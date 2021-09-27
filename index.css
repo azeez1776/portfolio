@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -53,17 +53,50 @@ body {
 .dot {
   position: relative;
   left: 29.4em;
-  top: 18.1em;
+  top: 20.1em;
   width: 2em;
   height: 2em;
-  border-radius: 2em;
+  /* border-radius: 2em; */
   background-color: #f72585;
+  animation-name: shape;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes shape {
+  0% {
+    border-radius: 2em;
+  }
+  25% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 2em;
+  }
+  75% {
+    border-radius: 0;
+    transform: rotate(180deg);
+  }
+  100% {
+    border-radius: 2em;
+  }
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 3em;
+  z-index: 1;
+  position: fixed;
+  padding-right: 4em;
+  background-color: #10002b;
+  width: 100%;
+  height: 3em;
+}
+
+.navbar {
+  margin-right: 1em;
 }
 
 .h_nav,
@@ -72,6 +105,7 @@ body {
   font-size: 20px;
   margin-left: 1.5em;
   color: #fff;
+  text-decoration: none;
 }
 
 .h_nav:hover,
