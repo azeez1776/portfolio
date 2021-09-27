@@ -54,7 +54,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 3em;
 }
 
@@ -73,7 +73,7 @@ body {
   margin-left: 2em;
 }
 
-.contact p {
+.c_title {
   font-size: 30px;
   margin-top: 0.5em;
   color: #fff;
@@ -83,9 +83,9 @@ body {
 .footer {
   background-color: #fff;
   width: 100vw;
-  /* height: 25%; */
+  height: 3em;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -111,28 +111,26 @@ body {
   display: flex;
   margin-left: 1em;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.c_info .fab,
-.fas {
-  width: 0.5em;
-}
-
-.c_info .fas {
-  margin-top: 1em;
+.c_p1,
+.c_p2 {
+  display: flex;
+  margin-bottom: 1em;
 }
 
 .email {
-  position: absolute;
-  top: 45.5em;
-  font-size: 20px;
+  font-size: 1.1em;
+  color: white;
+  margin-left: 1em;
 }
 
 .number {
-  position: absolute;
-  top: 47.5em;
-  font-size: 20px;
+  font-size: 1.1em;
+  color: white;
+  margin-left: 1em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -148,10 +146,7 @@ body {
 
   .nav {
     display: flex;
-    justify-content: end;
-    margin-right: 1em;
-    position: absolute;
-    left: 4.8em;
+    justify-content: flex-end;
   }
 
   .h_nav,
@@ -167,9 +162,10 @@ body {
     left: 14.5em;
     margin: 0;
     padding: 0;
+    display: flex;
   }
 
-  .footer {
+  /* .footer {
     background-color: #fff;
     width: 100vw;
     height: 7%;
@@ -178,7 +174,7 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
-  }
+  } */
 
   .fab {
     width: 0.5em;
