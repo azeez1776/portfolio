@@ -124,7 +124,7 @@ body {
 
 .about p {
   font-size: 30px;
-  color: #10002b;
+  color: #fff;
   margin-top: 0.5em;
   margin-left: 2em;
 }
@@ -132,7 +132,7 @@ body {
 .c_title {
   font-size: 30px;
   margin-top: 0.5em;
-  color: #fff;
+  color: #10002b;
   margin-left: 2em;
 }
 
