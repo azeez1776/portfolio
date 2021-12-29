@@ -189,6 +189,14 @@ body {
   margin-left: 1em;
 }
 
+.main_img {
+}
+
+.rocket {
+  object-fit: contain;
+  height: 35em;
+}
+
 @media only screen and (max-width: 768px) {
   .dot {
     position: relative;
