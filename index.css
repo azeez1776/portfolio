@@ -48,7 +48,8 @@ body {
   top: 7em;
   left: 2em;
   margin: 0;
-  color: #fff;
+  /* color: #fff; */
+  color: #10002b;
   font-size: 36px;
 }
 
