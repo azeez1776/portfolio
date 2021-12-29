@@ -13,7 +13,9 @@ body {
 }
 
 .home {
-  background-color: #10002b;
+  /* background-color: #10002b; */
+  background-color: #fff;
+
   height: 100vh;
   width: 100vw;
   /* scroll-snap-type: y mandatory;
@@ -22,7 +24,9 @@ body {
 }
 
 .about {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #10002b;
+
   height: 100vh;
   width: 100vw;
   /* scroll-snap-type: y mandatory;
@@ -30,7 +34,9 @@ body {
 }
 
 .contact {
-  background-color: #10002b;
+  /* background-color: #10002b; */
+  background-color: #fff;
+
   height: 100vh;
   width: 100vw;
   /* scroll-snap-type: y mandatory;
@@ -87,6 +93,7 @@ body {
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   z-index: 1;
   position: fixed;
   padding-right: 4em;
