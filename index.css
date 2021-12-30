@@ -127,6 +127,9 @@ body {
   color: #10002b;
   margin-top: 0.5em;
   margin-left: 2em;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #f72585;
 }
 
 .c_title {
