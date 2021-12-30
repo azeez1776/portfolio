@@ -136,7 +136,10 @@ body {
   font-size: 30px;
   margin-top: 0.5em;
   color: #10002b;
-  margin-left: 2em;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #f72585;
+  text-align: center;
 }
 
 .footer {
