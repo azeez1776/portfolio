@@ -24,8 +24,8 @@ body {
 }
 
 .about {
-  /* background-color: #fff; */
-  background-color: #10002b;
+  background-color: #fff;
+  /* background-color: #10002b; */
 
   height: 100vh;
   width: 100vw;
@@ -190,6 +190,11 @@ body {
 }
 
 .main_img {
+  margin-top: 5em;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
 }
 
 .rocket {
@@ -206,6 +211,10 @@ body {
     height: 2em;
     border-radius: 2em;
     background-color: #f72585;
+  }
+
+  .main_img {
+    display: none;
   }
 
   .nav {
