@@ -114,13 +114,39 @@ body {
   margin-left: 1.5em;
   color: #10002b;
   text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease;
+  
+}
+
+.h_nav::after,
+.a_nav::after,
+.c_nav::after { 
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #f72585;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 
 .h_nav:hover,
 .a_nav:hover,
 .c_nav:hover {
   cursor: pointer;
+  color: #f72585;
 }
+
+.h_nav:hover::after,
+.a_nav:hover::after,
+.c_nav:hover::after
+ { width: 100%; }
 
 .about p {
   font-size: 30px;
@@ -207,6 +233,7 @@ body {
   object-fit: contain;
   height: 35em;
 }
+
 
 @media only screen and (max-width: 768px) {
   .dot {
